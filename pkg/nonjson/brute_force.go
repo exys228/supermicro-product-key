@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"errors"
 	"github.com/rs/zerolog/log"
-	"github.com/zsrv/supermicro-product-key/pkg/oob"
+	"github.com/exys228/supermicro-product-key/pkg/oob"
 )
 
 // BruteForceProductKeyMACAddress finds the MAC address associated with an encrypted
