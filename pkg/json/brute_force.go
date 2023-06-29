@@ -20,10 +20,10 @@ func BruteForceMACAddressFromString(productKey string) (string, error) {
 
 // BruteForceMACAddress finds the MAC address associated with the license.
 func BruteForceMACAddress(license License) (string, error) {
-	brute := func(macBlock string, result chan string, done chan bool) {
+	brute := func(macBlock string, start int, result chan string, done chan bool) {
 		log.Debug().Msgf("searching mac address block '%s'", macBlock)
 
-		for one := 0; one <= 255; one++ {
+		for one := 0; one <= 15; one++ {
 			log.Debug().Msgf("'%s' - one = %d", macBlock, one)
 			hexOne := hex.EncodeToString([]byte{byte(one)})
 			for two := 0; two <= 255; two++ {
@@ -50,7 +50,9 @@ func BruteForceMACAddress(license License) (string, error) {
 	done := make(chan bool)
 
 	for _, macBlock := range oob.SupermicroMACAddressBlocks {
-		go brute(macBlock, result, done)
+		for i := 0; i <= 255; i += 16 {
+				go brute(macBlock, i, result, done)
+			}
 	}
 
 	for range oob.SupermicroMACAddressBlocks {
