@@ -26,6 +26,8 @@ func BruteForceMACAddress(license License) (string, error) {
 		for one := 0; one <= 255; one++ {
 			hexOne := hex.EncodeToString([]byte{byte(one)})
 			for two := 0; two <= 255; two++ {
+                                log.Debug().Msgf("'%s' - two = %d", macBlock, two)
+				
 				hexTwo := hex.EncodeToString([]byte{byte(two)})
 				for three := 0; three <= 255; three++ {
 					hexThree := hex.EncodeToString([]byte{byte(three)})
