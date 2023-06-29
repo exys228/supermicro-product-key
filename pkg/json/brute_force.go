@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog/log"
-	"github.com/zsrv/supermicro-product-key/pkg/oob"
+	"github.com/exys228/supermicro-product-key/pkg/oob"
 	"strings"
 )
 
