@@ -4,7 +4,7 @@ import (
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
-	"github.com/zsrv/supermicro-product-key/pkg/build"
+	"github.com/exys228/supermicro-product-key/pkg/build"
 	"os"
 	"time"
 )
