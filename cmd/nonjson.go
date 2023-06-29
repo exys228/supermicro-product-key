@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"github.com/zsrv/supermicro-product-key/pkg/nonjson"
+	"github.com/exys228/supermicro-product-key/pkg/nonjson"
 	"os"
 	"text/tabwriter"
 	"time"
