@@ -11,7 +11,7 @@ This utility is a command line program. If Go is installed on your system, the l
 can be built and installed by running:
 
 ```shell
-go install github.com/zsrv/supermicro-product-key@latest
+go install github.com/exys228/supermicro-product-key@v1.1.3
 ```
 
 Otherwise, a binary can be downloaded from the [releases page](https://github.com/zsrv/supermicro-product-key/releases).
