@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	"github.com/zsrv/supermicro-product-key/pkg/json"
+	"github.com/exys228/supermicro-product-key/pkg/json"
 	"os"
 	"text/tabwriter"
 )
