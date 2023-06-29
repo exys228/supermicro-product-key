@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/zsrv/supermicro-product-key/cmd"
+	"github.com/exys228/supermicro-product-key/cmd"
 )
 
 func main() {
