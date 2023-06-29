@@ -1,4 +1,4 @@
-module github.com/zsrv/supermicro-product-key
+module github.com/exys228/supermicro-product-key
 
 go 1.20
 
