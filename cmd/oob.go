@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"github.com/zsrv/supermicro-product-key/pkg/oob"
+	"github.com/exys228/supermicro-product-key/pkg/oob"
 )
 
 func init() {
