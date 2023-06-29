@@ -6,7 +6,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"github.com/zsrv/supermicro-product-key/pkg/oob"
+	"github.com/exys228/supermicro-product-key/pkg/oob"
 	"io"
 	"strings"
 )
