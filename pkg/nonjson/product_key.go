@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"encoding/base64"
 	"fmt"
-	"github.com/zsrv/supermicro-product-key/pkg/oob"
+	"github.com/exys228/supermicro-product-key/pkg/oob"
 	"strconv"
 	"time"
 )
